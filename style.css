@@ -1,0 +1,429 @@
+:root {
+    --cor-um: #313352;
+    --cor-dois: #F3BC39;
+    --text-color: #fff;
+    --text-dois: #000;
+}
+* {
+    font-family: 'Gotham';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #242755;
+    color: #ffffff; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+}
+
+.logo {
+    width: 230px; 
+    height: auto;
+    margin-right: 200px; 
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 15px;
+    text-align: center;
+}
+
+.hero {
+    background-image: url(img/cabeçalho.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px;
+}
+ 
+.hero-title {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero-text {
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/** seção um **/
+
+.section-um {
+    background-color: #fff;
+    padding: 80px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 1; 
+}
+
+.image-container {
+    flex: 1; 
+    text-align: right; 
+    padding-left: 100px; 
+}
+
+.palestra {
+    max-width: 100%; 
+    height: auto;
+}
+
+.title-um {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #242755;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px; 
+}
+
+.p-um {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/** evento **/
+
+.section-dois {
+    background-color: #242755;
+    padding: 80px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.local-container {
+    flex: 1; 
+    text-align: left; 
+    padding-right: 100px; 
+}
+
+.title-dois {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px; 
+}
+
+.local {
+    max-width: 100%; 
+    height: auto;
+}
+.p-dois {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+    color: #fff;
+}
+
+.text-local {
+    margin-top: 20 px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/**contagem regressiva**/
+
+.countdown-countainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 0;
+}
+
+#text-coutdown {
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 4.5rem;
+    text-align: center;
+    color: #242755;
+}
+
+
+.coutdown-days, .coutdown-hours, .coutdown-mins, .coutdown-secs {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.coutdown-days p.text, .coutdown-hours p.text, .coutdown-mins p.text, .coutdown-secs p.text {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+
+#text-count {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+/** modal **/
+
+#cta-text{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    margin: auto;
+    max-width: 70%;
+    font-size: 18px;
+
+}
+
+.modal {
+    padding: 80px;
+    background-color: #242755;
+    margin-bottom: 40px #242755;
+
+}
+
+button {
+    
+    background-color: #e7a609;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+#open-modal {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    width: 370px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+
+}
+
+#close-modal {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+button-hover{
+    opacity: 1;
+}
+
+#fade, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px;
+    max-width: 50%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#modal.hide, #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+
+}
+
+#text-modal {
+    padding: 10px;
+}
+
+/** form **/
+
+#form-text{
+    text-align: center;
+    color: #000;
+    margin: auto;
+    max-width: 70%;
+    font-size: 20px;
+    margin-top: 80px;
+
+}
+
+#form-here {
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.form {
+    padding: 100px;
+    background-color: #fff;
+    margin: 100px;
+    margin-top: 20px;
+
+}
+
+form h3 {
+    text-align: center;
+    color: #242755;
+}
+
+form input[type=text] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background: #242755;
+    color: white;
+    border: 0;
+    transition: 1s;
+}
+
+form input[type=submit]:hover {
+    background-color: #242755;
+}
+
+/** rodape **/
+
+.rodape {
+    background-color: #242755;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-rodape {
+    max-width: 60%; 
+    height: auto; 
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        max-height: 80px;
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 18px;
+        margin-left: 20px;
+    }
+
+    .text-head {
+        max-height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .hero {
+        max-height: 200px;
+        padding-top: 10px;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .hero-title {
+        margin: 0;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .section-um {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta-text {
+        max-height: 200px;
+        padding-top: 10px;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .img-rodape {
+        max-width: 80%;
+    }
+}
